@@ -1,30 +1,38 @@
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
-
+import { CiSun } from 'react-icons/ci'
+import {HiMoon } from 'react-icons/hi'
 
 import Skills from '@/components/Skills'
 import Projects from '@/components/Projects'
 import About from '@/components/About'
-import Contact from './Contact'
 import HeroBanner from '@/components/HeroBanner'
+import { useState } from 'react'
+import Contact from '@/components/Contact'
+
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
+  const [theme , setTheme] = useState(false);
+  const handleTheme = () =>{
+     setTheme(!theme);
+  }
   return (
-<div className='bg-twhite h-full'>
+<div className={`${theme?'bg-twhite text-black ': 'bg-black text-twhite'}  h-full`}>
  
  <div className='h-full w-full' id='herobanner'>
 <HeroBanner/>
+<button onClick={handleTheme} className='absolute top-3 left-72 bg-tred rounded-lg'>{theme?<HiMoon size={30}/>:<CiSun size={30}/>}</button>
  </div>
  <div id='about'>
   <About/>
  </div>
- <div id='skills'>
-  <Skills/>
- </div>
  <div id='projects'>
   <Projects/>
+ </div>
+ <div id='skills'>
+  <Skills/>
  </div>
  <div id='contact'>
   <Contact/>

@@ -1,17 +1,17 @@
 import React from 'react'
 
-const Skills = () => {
+const Contact = () => {
   return (
     <>
       <div className=" h-screen">
         <div className="flex items-end justify-center">
-          <div className="flex w-[90%] items-end">
-            <h1 className="text-7xl font-extrabold">
-              Skills<span className="text-tred">.</span>
-            </h1>
-            <div className="w-full ml-4 h-1 bg-tred mb-2">
+        <div className="flex w-[90%] items-end">
+            <div className="w-full mr-4 h-1 bg-tred mb-2">
               <hr />
             </div>
+            <h1 className="text-7xl font-extrabold">
+            <span className="text-tred">.</span>Contact
+            </h1>
           </div>
         </div>
       <div className="m-32 w-[50%]">
@@ -28,4 +28,4 @@ const Skills = () => {
   );
 }
 
-export default Skills
+export default Contact
