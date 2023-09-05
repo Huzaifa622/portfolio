@@ -64,7 +64,8 @@ const HeroBanner = () => {
         </nav>
       </div>
 
-      <div className=" w-full h-screen">
+      <div className=" w-full h-screen flex">
+        <div className="relative z-10">
         <hr className="w-[95%] mx-auto" />
         <div className="m-32 w-[50%]">
           <RevealY>
@@ -99,7 +100,9 @@ const HeroBanner = () => {
               Contact
             </motion.button>
           </RevealY>
+          </div>
         </div>
+       <img className="text-white absolute left-2/4 z-0 opacity-50 top-28 rounded-full" width={500} src="/dt.png"/>
       </div>
     </>
   );
