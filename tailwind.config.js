@@ -10,7 +10,8 @@ module.exports = {
     extend: {
       colors:{
         twhite : '#f8f7f2',
-        tred : '#fb3640'
+        tred : '#fb3640',
+        
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
