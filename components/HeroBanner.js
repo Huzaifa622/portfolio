@@ -95,7 +95,7 @@ const HeroBanner = () => {
                   scale: 1.1,
                   boxShadow: "0 0 18px red",
                   textShadow: "0 0 8px white",
-                  transition: { duration: 1.1, repeat: Infinity },
+                  backgroundColor : "red",
                 }}
                 className="bg-tred text-twhite p-5 pt-2 pb-2 rounded-lg m-8"
               >

@@ -1,13 +1,15 @@
 import React from "react";
 import RevealY from "./RevealY";
 import RevealX from "./RevealX";
+import { motion } from "framer-motion";
 import {CiCircleChevRight} from 'react-icons/ci'
 import {RiJavascriptFill} from 'react-icons/ri'
-import {BiLogoCss3 , BiLogoFirebase, BiLogoTailwindCss, BiLogoMongodb} from 'react-icons/bi'
+import {BiLogoCss3 , BiLogoFirebase, BiLogoTailwindCss, BiLogoMongodb, BiLogoFacebookSquare ,BiLogoLinkedinSquare , BiLogoGithub} from 'react-icons/bi'
 import {TbBrandNextjs} from 'react-icons/tb'
 import {FaReact} from 'react-icons/fa'
 // import {IoLogoJavascript} from 'react-icons/io'
 import {AiFillHtml5 , AiOutlineArrowRight} from 'react-icons/ai'
+import Link from "next/link";
 
 
 const About = () => {
@@ -39,18 +41,103 @@ const About = () => {
         <div className=" ml-4 gap-8 flex flex-col w-[30%]">
       <div>
        <h1 className="flex text-2xl items-center text-center gap-3 font-extrabold"><CiCircleChevRight className="bg-tred rounded-md" size={30}/>My Skills</h1>
-       <div className="flex gap-4 mt-4 flex-wrap">
-        <span className="flex items-center gap-1 text-center p-3 pt-0 pb-0 border-tred border rounded-lg">HTML<AiFillHtml5 size={20}/></span>
-        <span className="flex items-center gap-1 text-center p-3 pt-0 pb-0 border-tred border rounded-lg">CSS<BiLogoCss3 size={20}/></span>
-        <span className="flex items-center gap-1 text-center p-3 pt-0 pb-0 border-tred border rounded-lg">Tailwind<BiLogoTailwindCss size={20}/></span>
-        <span className="flex items-center gap-1 text-center p-3 pt-0 pb-0 border-tred border rounded-lg">JavaScript<RiJavascriptFill size={20}/></span>
-        <span className="flex items-center gap-1 text-center p-3 pt-0 pb-0 border-tred border rounded-lg">Raect JS<FaReact size={20}/></span>
-        <span className="flex items-center gap-1 text-center p-3 pt-0 pb-0 border-tred border rounded-lg">Next JS<TbBrandNextjs size={20}/></span>
-        <span className="flex items-center gap-1 text-center p-3 pt-0 pb-0 border-tred border rounded-lg">Firebase<BiLogoFirebase size={20}/></span>
-        <span className="flex items-center gap-1 text-center p-3 pt-0 pb-0 border-tred border rounded-lg">MongoDB<BiLogoMongodb size={20}/></span>
+       <div
+      
+       className="flex gap-4 mt-4 flex-wrap">
+        <motion.span
+          whileHover={{
+            scale: 1.1,
+            boxShadow: "0 0 18px red",
+            textShadow: "0 0 8px white",
+            backgroundColor : "red"
+          }}
+        className="flex items-center gap-1 text-center p-3 pt-0 pb-0 border-tred border rounded-lg">HTML<AiFillHtml5 size={20}/></motion.span>
+        <motion.span 
+        whileHover={{
+          scale: 1.1,
+          boxShadow: "0 0 18px red",
+          textShadow: "0 0 8px white",
+          backgroundColor : "red"
+        }}
+        className="flex items-center gap-1 text-center p-3 pt-0 pb-0 border-tred border rounded-lg">CSS<BiLogoCss3 size={20}/></motion.span>
+        <motion.span
+        whileHover={{
+          scale: 1.1,
+          boxShadow: "0 0 18px red",
+          textShadow: "0 0 8px white",
+          backgroundColor : "red"
+        }}
+        
+        className="flex items-center gap-1 text-center p-3 pt-0 pb-0 border-tred border rounded-lg">Tailwind<BiLogoTailwindCss size={20}/></motion.span>
+        <motion.span
+        whileHover={{
+          scale: 1.1,
+          boxShadow: "0 0 18px red",
+          textShadow: "0 0 8px white",
+          backgroundColor : "red"
+        }}
+        className="flex items-center gap-1 text-center p-3 pt-0 pb-0 border-tred border rounded-lg">JavaScript<RiJavascriptFill size={20}/></motion.span>
+        <motion.span
+        whileHover={{
+          scale: 1.1,
+          boxShadow: "0 0 18px red",
+          textShadow: "0 0 8px white",
+          backgroundColor : "red"
+        }}
+        className="flex items-center gap-1 text-center p-3 pt-0 pb-0 border-tred border rounded-lg">React JS<FaReact size={20}/></motion.span>
+        <motion.span
+        whileHover={{
+          scale: 1.1,
+          boxShadow: "0 0 18px red",
+          textShadow: "0 0 8px white",
+          backgroundColor : "red"
+        }}
+        className="flex items-center gap-1 text-center p-3 pt-0 pb-0 border-tred border rounded-lg">Next JS<TbBrandNextjs size={20}/></motion.span>
+        <motion.span
+        whileHover={{
+          scale: 1.1,
+          boxShadow: "0 0 18px red",
+          textShadow: "0 0 8px white",
+          backgroundColor : "red"
+        }}
+        className="flex items-center gap-1 text-center p-3 pt-0 pb-0 border-tred border rounded-lg">Firebase<BiLogoFirebase size={20}/></motion.span>
+        <motion.span
+        whileHover={{
+            scale: 1.1,
+            boxShadow: "0 0 18px red",
+            textShadow: "0 0 8px white",
+            backgroundColor : "red"
+          }}
+        className="flex items-center gap-1 text-center p-3 pt-0 pb-0 border-tred border rounded-lg">MongoDB<BiLogoMongodb size={20}/></motion.span>
        </div>
       </div>
-       <div className="text-tred flex items-center text-center ">My Links <span className="ml-4"><AiOutlineArrowRight /></span></div>
+       <div className="flex items-center text-center ">My Links <span className="ml-4"><AiOutlineArrowRight /></span>
+       <motion.span
+         whileHover={{
+          scale: 1.1,
+          boxShadow: "0 0 18px red",
+          textShadow: "0 0 8px white",
+          backgroundColor : "red"
+        }}
+       className=" ml-4"><Link href={'/'}><BiLogoFacebookSquare size={30}/></Link></motion.span>
+       <motion.span
+         whileHover={{
+          scale: 1.1,
+          boxShadow: "0 0 18px red",
+          textShadow: "0 0 8px white",
+          backgroundColor : "red"
+        }}
+       className=" ml-4"><Link href={'/'}><BiLogoLinkedinSquare size={30}/></Link></motion.span>
+       <motion.span
+         whileHover={{
+          scale: 1.1,
+          boxShadow: "0 0 18px red",
+          textShadow: "0 0 8px white",
+          backgroundColor : "red"
+        }}
+       className=" ml-4"><Link href={'/'}><BiLogoGithub size={30}/></Link></motion.span>
+       
+       </div>
       </div>
      
       </div>
