@@ -8,7 +8,7 @@ import {BiLogoCss3 , BiLogoFirebase, BiLogoTailwindCss, BiLogoMongodb, BiLogoFac
 import {TbBrandNextjs} from 'react-icons/tb'
 import {FaReact} from 'react-icons/fa'
 // import {IoLogoJavascript} from 'react-icons/io'
-import {AiFillHtml5 , AiOutlineArrowRight} from 'react-icons/ai'
+import {AiFillHtml5 , AiOutlineArrowRight , AiOutlineGoogle} from 'react-icons/ai'
 import Link from "next/link";
 
 
@@ -18,7 +18,7 @@ const About = () => {
       <div className=" h-screen">
         <div className="flex items-end justify-center">
           <div className="flex w-[90%] items-end">
-            <h1 className="text-7xl font-extrabold">
+            <h1 className="text-7xl font-extrabold mt-12">
               About<span className="text-tred">.</span>
             </h1>
             <div className="w-full ml-4 h-1 bg-tred mb-2">
@@ -27,8 +27,8 @@ const About = () => {
           </div>
         </div>
         <RevealX>
-      <div className="m-32  h-screen flex">
-        <div className="gap-8 w-[70%] mr-4 flex flex-col">
+      <div className="m-32  h-screen flex flex-wrap">
+        <div className="gap-8 w-[60%] mr-4 flex flex-col">
         <p className="text-lg">
           <span className="font-bold text-2xl bg-tred p-2 rounded-lg  m-1">H</span>ey,I'm Huzaifa and I'm a passionate web developer with a
           flair for crafting digital experiences that blend creativity with
@@ -111,7 +111,7 @@ const About = () => {
         className="flex items-center gap-1 text-center p-3 pt-0 pb-0 border-tred border rounded-lg">MongoDB<BiLogoMongodb size={20}/></motion.span>
        </div>
       </div>
-       <div className="flex items-center text-center ">My Links <span className="ml-4"><AiOutlineArrowRight /></span>
+       <div className="flex items-center text-center "> <span className="flex items-center text-tred">My Links<AiOutlineArrowRight className="ml-4" /></span>
        <motion.span
          whileHover={{
           scale: 1.1,
@@ -135,7 +135,15 @@ const About = () => {
           textShadow: "0 0 8px white",
           backgroundColor : "red"
         }}
-       className=" ml-4"><Link href={'/'}><BiLogoGithub size={30}/></Link></motion.span>
+       className=" ml-4 rounded-full"><Link href={'/'}><AiOutlineGoogle size={30}/></Link></motion.span>
+       <motion.span
+         whileHover={{
+          scale: 1.1,
+          boxShadow: "0 0 18px red",
+          textShadow: "0 0 8px white",
+          backgroundColor : "red"
+        }}
+       className=" ml-4 rounded-full"><Link href={'/'}><BiLogoGithub size={30}/></Link></motion.span>
        
        </div>
       </div>

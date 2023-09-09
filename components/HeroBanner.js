@@ -1,72 +1,15 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { AiOutlineArrowRight } from "react-icons/ai";
-import { scrollTo } from "@/pages/services";
+
 import RevealY from "./RevealY";
 const HeroBanner = () => {
   return (
     <>
-      <div className="w-full  flex justify-center overflow-x-hidden">
-        <nav className="flex w-[80%] h-[3rem] justify-between items-center">
-          <div>
-            <h2 className="text-4xl font-bold">
-              Huzaifa<span className="text-tred ">.</span>
-            </h2>
-          </div>
-          <div className="w-[50%]">
-            <ul className="flex justify-evenly z-10">
-              <motion.li
-                whileHover={{
-                  scale: 1.1,
-                  textShadow: "0 0 8px white",
-                  transition: { duration: 1.1, repeat: Infinity },
-                }}
-                onClick={() => scrollTo("herobanner")}
-                className="cursor-pointer "
-              >
-                Home
-              </motion.li>
-              <motion.li
-                whileHover={{
-                  scale: 1.1,
-                  textShadow: "0 0 8px white",
-                  transition: { duration: 1.1, repeat: Infinity },
-                }}
-                onClick={() => scrollTo("about")}
-                className="cursor-pointer "
-              >
-                About
-              </motion.li>
-              <motion.li
-                whileHover={{
-                  scale: 1.1,
-                  textShadow: "0 0 8px white",
-                  transition: { duration: 1.1, repeat: Infinity },
-                }}
-                onClick={() => scrollTo("projects")}
-                className="cursor-pointer "
-              >
-                Projects
-              </motion.li>
-              <motion.li
-                whileHover={{
-                  scale: 1.1,
-                  textShadow: "0 0 8px white",
-                  transition: { duration: 1.1, repeat: Infinity },
-                }}
-                onClick={() => scrollTo("contact")}
-                className="cursor-pointer "
-              >
-                Contact
-              </motion.li>
-            </ul>
-          </div>
-        </nav>
-      </div>
+   
 
       <div className=" w-full h-screen flex">
         <div className="relative z-10">
-          <hr className="w-[95%] mx-auto" />
           <div className="m-32 w-[50%]">
             <RevealY>
               <h3 className="text-7xl font-extrabold">

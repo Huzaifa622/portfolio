@@ -9,7 +9,7 @@ const Contact = () => {
             <div className="w-full mr-4 h-1 bg-tred mb-2">
               <hr />
             </div>
-            <h1 className="text-7xl font-extrabold">
+            <h1 className="text-7xl font-extrabold mt-12">
             <span className="text-tred">.</span>Contact
             </h1>
           </div>

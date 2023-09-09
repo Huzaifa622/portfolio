@@ -8,6 +8,7 @@ import HeroBanner from '@/components/HeroBanner'
 import { useState } from 'react'
 import Contact from '@/components/Contact'
 import CustomCursor from '@/components/CustomCursor'
+import Navbar from '@/components/Navbar'
 
 
 
@@ -19,12 +20,13 @@ export default function Home() {
      setTheme(!theme);
   }
   return (
-<div className={`${theme?'bg-twhite text-black ': 'bg-black text-twhite'}  h-full`}>
+<div className={`${theme?'bg-twhite text-black ': 'bg-black text-twhite'}  h-full overflow-hidden`}>
  {/* <CustomCursor/> */}
  {/* <TsParticles/> */}
+ <Navbar/>
  <div className='h-full w-full' id='herobanner'>
 <HeroBanner/>
-<button onClick={handleTheme} className='absolute top-3 left-72 bg-tred rounded-lg'>{theme?<HiMoon size={30}/>:<CiSun size={30}/>}</button>
+<button onClick={handleTheme} className='fixed z-20 top-5 left-72 bg-tred rounded-lg'>{theme?<HiMoon size={30}/>:<CiSun size={30}/>}</button>
  </div>
  <div id='about'>
   <About/>
