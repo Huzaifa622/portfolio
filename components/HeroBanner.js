@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { AiOutlineArrowRight } from "react-icons/ai";
+import { scrollTo } from "@/pages/services";
 
 import RevealY from "./RevealY";
 const HeroBanner = () => {
@@ -41,6 +42,7 @@ const HeroBanner = () => {
                   backgroundColor : "red",
                 }}
                 className="bg-tred text-twhite p-5 pt-2 pb-2 rounded-lg m-8"
+                onClick={() => scrollTo("contact")}
               >
                 Let's Connect
               </motion.button>

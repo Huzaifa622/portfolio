@@ -9,6 +9,7 @@ import { useState } from 'react'
 import Contact from '@/components/Contact'
 import CustomCursor from '@/components/CustomCursor'
 import Navbar from '@/components/Navbar'
+import Links from '@/components/Links'
 
 
 
@@ -24,6 +25,7 @@ export default function Home() {
  {/* <CustomCursor/> */}
  {/* <TsParticles/> */}
  <Navbar/>
+ <Links/>
  <div className='h-full w-full' id='herobanner'>
 <HeroBanner/>
 <button onClick={handleTheme} className='fixed z-20 top-5 left-72 bg-tred rounded-lg'>{theme?<HiMoon size={30}/>:<CiSun size={30}/>}</button>

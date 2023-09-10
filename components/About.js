@@ -51,7 +51,7 @@ const About = () => {
             textShadow: "0 0 8px white",
             backgroundColor : "red"
           }}
-        className="flex items-center gap-1 text-center p-3 pt-0 pb-0 border-tred border rounded-lg">HTML<AiFillHtml5 size={20}/></motion.span>
+        className="flex items-center gap-1 text-center p-3 pt-0 pb-0 border-tred border rounded-lg hover:cursor-pointer">HTML<AiFillHtml5 size={20}/></motion.span>
         <motion.span 
         whileHover={{
           scale: 1.1,
@@ -59,7 +59,7 @@ const About = () => {
           textShadow: "0 0 8px white",
           backgroundColor : "red"
         }}
-        className="flex items-center gap-1 text-center p-3 pt-0 pb-0 border-tred border rounded-lg">CSS<BiLogoCss3 size={20}/></motion.span>
+        className="flex items-center gap-1 text-center p-3 pt-0 pb-0 border-tred border rounded-lg hover:cursor-pointer">CSS<BiLogoCss3 size={20}/></motion.span>
         <motion.span
         whileHover={{
           scale: 1.1,
@@ -68,7 +68,7 @@ const About = () => {
           backgroundColor : "red"
         }}
         
-        className="flex items-center gap-1 text-center p-3 pt-0 pb-0 border-tred border rounded-lg">Tailwind<BiLogoTailwindCss size={20}/></motion.span>
+        className="flex items-center gap-1 text-center p-3 pt-0 pb-0 border-tred border rounded-lg hover:cursor-pointer">Tailwind<BiLogoTailwindCss size={20}/></motion.span>
         <motion.span
         whileHover={{
           scale: 1.1,
@@ -76,7 +76,7 @@ const About = () => {
           textShadow: "0 0 8px white",
           backgroundColor : "red"
         }}
-        className="flex items-center gap-1 text-center p-3 pt-0 pb-0 border-tred border rounded-lg">JavaScript<RiJavascriptFill size={20}/></motion.span>
+        className="flex items-center gap-1 text-center p-3 pt-0 pb-0 border-tred border rounded-lg hover:cursor-pointer">JavaScript<RiJavascriptFill size={20}/></motion.span>
         <motion.span
         whileHover={{
           scale: 1.1,
@@ -84,7 +84,7 @@ const About = () => {
           textShadow: "0 0 8px white",
           backgroundColor : "red"
         }}
-        className="flex items-center gap-1 text-center p-3 pt-0 pb-0 border-tred border rounded-lg">React JS<FaReact size={20}/></motion.span>
+        className="flex items-center gap-1 text-center p-3 pt-0 pb-0 border-tred border rounded-lg hover:cursor-pointer">React JS<FaReact size={20}/></motion.span>
         <motion.span
         whileHover={{
           scale: 1.1,
@@ -92,7 +92,7 @@ const About = () => {
           textShadow: "0 0 8px white",
           backgroundColor : "red"
         }}
-        className="flex items-center gap-1 text-center p-3 pt-0 pb-0 border-tred border rounded-lg">Next JS<TbBrandNextjs size={20}/></motion.span>
+        className="flex items-center gap-1 text-center p-3 pt-0 pb-0 border-tred border rounded-lg hover:cursor-pointer">Next JS<TbBrandNextjs size={20}/></motion.span>
         <motion.span
         whileHover={{
           scale: 1.1,
@@ -100,7 +100,7 @@ const About = () => {
           textShadow: "0 0 8px white",
           backgroundColor : "red"
         }}
-        className="flex items-center gap-1 text-center p-3 pt-0 pb-0 border-tred border rounded-lg">Firebase<BiLogoFirebase size={20}/></motion.span>
+        className="flex items-center gap-1 text-center p-3 pt-0 pb-0 border-tred border rounded-lg hover:cursor-pointer">Firebase<BiLogoFirebase size={20}/></motion.span>
         <motion.span
         whileHover={{
             scale: 1.1,
@@ -108,7 +108,7 @@ const About = () => {
             textShadow: "0 0 8px white",
             backgroundColor : "red"
           }}
-        className="flex items-center gap-1 text-center p-3 pt-0 pb-0 border-tred border rounded-lg">MongoDB<BiLogoMongodb size={20}/></motion.span>
+        className="flex items-center gap-1 text-center p-3 pt-0 pb-0 border-tred border rounded-lg hover:cursor-pointer">MongoDB<BiLogoMongodb size={20}/></motion.span>
        </div>
       </div>
        <div className="flex items-center text-center "> <span className="flex items-center text-tred">My Links<AiOutlineArrowRight className="ml-4" /></span>
@@ -119,7 +119,7 @@ const About = () => {
           textShadow: "0 0 8px white",
           backgroundColor : "red"
         }}
-       className=" ml-4"><Link href={'/'}><BiLogoFacebookSquare size={30}/></Link></motion.span>
+       className=" ml-4 hover:cursor-pointer"><Link href={'https://www.facebook.com/tanveer.huzaifa?mibextid=2JQ9oc'}><BiLogoFacebookSquare size={30}/></Link></motion.span>
        <motion.span
          whileHover={{
           scale: 1.1,
@@ -127,7 +127,7 @@ const About = () => {
           textShadow: "0 0 8px white",
           backgroundColor : "red"
         }}
-       className=" ml-4"><Link href={'/'}><BiLogoLinkedinSquare size={30}/></Link></motion.span>
+       className=" ml-4 hover:cursor-pointer"><Link href={'https://www.linkedin.com/in/huzaifa-tanveer-a81533249'}><BiLogoLinkedinSquare size={30}/></Link></motion.span>
        <motion.span
          whileHover={{
           scale: 1.1,
@@ -135,15 +135,7 @@ const About = () => {
           textShadow: "0 0 8px white",
           backgroundColor : "red"
         }}
-       className=" ml-4 rounded-full"><Link href={'/'}><AiOutlineGoogle size={30}/></Link></motion.span>
-       <motion.span
-         whileHover={{
-          scale: 1.1,
-          boxShadow: "0 0 18px red",
-          textShadow: "0 0 8px white",
-          backgroundColor : "red"
-        }}
-       className=" ml-4 rounded-full"><Link href={'/'}><BiLogoGithub size={30}/></Link></motion.span>
+       className=" ml-4 rounded-full hover:cursor-pointer"><Link href={'https://github.com/Huzaifa622'}><BiLogoGithub size={30}/></Link></motion.span>
        
        </div>
       </div>
