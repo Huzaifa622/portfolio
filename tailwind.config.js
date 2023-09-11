@@ -11,6 +11,7 @@ module.exports = {
       colors:{
         twhite : '#f8f7f2',
         tred : '#fb3640',
+        tblue : '#22577a'
         
       },
       backgroundImage: {

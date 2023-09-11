@@ -49,11 +49,14 @@ const HeroBanner = () => {
             </RevealY>
           </div>
         </div>
+        <div className="absolute left-[60%] top-32 rounded-full bg-tred">
         <img
-          className="absolute  left-2/4 z-10 opacity-50 grayscale-[100%] top-32 rounded-full"
+        className="grayscale-[100%] rounded-full opacity-90" 
+          
        width={400}
           src="/pic.png"
         />
+        </div>
       </div>
       <div className="w-full flex justify-between z-0 items-center -mt-36 mb-20">
         <motion.div

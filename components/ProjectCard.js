@@ -7,7 +7,7 @@ const ProjectCard = (props) => {
   return (
     <RevealXY>
     <motion.div
-      className="rounded-lg shadow-lg p-4 hover:shadow-xl transition duration-300 ease-in-out mb-4 max-w-[400px] "
+      className="rounded-lg shadow-lg p-4 hover:shadow-xl transition duration-300 ease-in-out  max-w-[400px] "
       whileHover={{ scale: 1.1 }}
     >
       <img

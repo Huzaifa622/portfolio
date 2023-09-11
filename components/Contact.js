@@ -1,4 +1,6 @@
 import React from 'react'
+import ContactForm from './ContactForm';
+
 
 const Contact = () => {
   return (
@@ -14,15 +16,7 @@ const Contact = () => {
             </h1>
           </div>
         </div>
-      <div className="m-32 w-[50%]">
-        <p className="text-lg">
-          <span className="font-bold text-2xl bg-tred p-2 rounded-lg  m-1">H</span>ey,I'm Huzaifa and I'm a passionate web developer with a
-          flair for crafting digital experiences that blend creativity with
-          functionality. With a solid foundation in front-end and back-end
-          technologies, I thrive on turning ideas into beautifully designed,
-          user-friendly websites and web applications{" "}
-        </p>
-      </div>
+    <div className='w-full'><ContactForm/></div>
       </div>
     </>
   );
