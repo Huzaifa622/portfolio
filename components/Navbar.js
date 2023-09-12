@@ -1,5 +1,5 @@
-import React from 'react';
-import { motion } from 'framer-motion';
+import React from "react";
+import { motion } from "framer-motion";
 import { scrollTo } from "@/pages/services";
 
 const Navbar = () => {
@@ -59,7 +59,7 @@ const Navbar = () => {
                 Contact
               </motion.li>
               <motion.a
-              href='/Resume.pdf'
+                href="/Resume.pdf"
                 whileHover={{
                   scale: 1.1,
                   boxShadow: "0 0 18px red",
@@ -67,9 +67,8 @@ const Navbar = () => {
                   backgroundColor: "red",
                 }}
                 className="bg-tred text-twhite p-2 pb-1 pt-1  rounded-lg "
-                
               >
-              My Resume
+                My Resume
               </motion.a>
             </ul>
           </div>

@@ -1,7 +1,7 @@
-import React from 'react';
-import ProjectCard from './ProjectCard';
-import ProjectList from './ProjectList';
-import RevealY from './RevealY';
+import React from "react";
+import ProjectCard from "./ProjectCard";
+import ProjectList from "./ProjectList";
+import RevealY from "./RevealY";
 
 const Projects = () => {
   return (
@@ -19,19 +19,19 @@ const Projects = () => {
         </div>
         <div className="m-32 ">
           <RevealY>
-          <div className="flex gap-4 ">
-            {ProjectList.map((project, index) => {
-              return (
-                <ProjectCard
-                  key={index}
-                  image={project.image}
-                  href={project.href}
-                  heading={project.heading}
-                  technologies={project.technologies}
-                />
-              );
-            })}
-          </div>
+            <div className="flex gap-4 ">
+              {ProjectList.map((project, index) => {
+                return (
+                  <ProjectCard
+                    key={index}
+                    image={project.image}
+                    href={project.href}
+                    heading={project.heading}
+                    technologies={project.technologies}
+                  />
+                );
+              })}
+            </div>
           </RevealY>
         </div>
       </div>

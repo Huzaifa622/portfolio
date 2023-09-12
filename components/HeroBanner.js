@@ -7,13 +7,11 @@ import RevealY from "./RevealY";
 const HeroBanner = () => {
   return (
     <>
-   
-
       <div className=" w-full h-screen flex">
         <div className="relative z-10">
           <div className="m-32 w-[50%]">
             <RevealY>
-              <h3 className="text-7xl font-extrabold">
+              <h3 className="lg:text-7xl md:text-6xl font-extrabold">
                 Hey,I&apos;m Huzaifa<span className="text-tred">.</span>
               </h3>
               <h1 className="text-4xl mt-5">
@@ -33,13 +31,13 @@ const HeroBanner = () => {
                 tailored to meet the specific needs of my clients.let's
                 connect!!
               </p>
-          
+
               <motion.button
                 whileHover={{
                   scale: 1.1,
                   boxShadow: "0 0 18px red",
                   textShadow: "0 0 8px white",
-                  backgroundColor : "red",
+                  backgroundColor: "red",
                 }}
                 className="bg-tred text-twhite p-5 pt-2 pb-2 rounded-lg m-8"
                 onClick={() => scrollTo("contact")}
@@ -50,40 +48,40 @@ const HeroBanner = () => {
           </div>
         </div>
         <div className="absolute left-[60%] top-32 rounded-full bg-tred">
-        <img
-        className="grayscale-[100%] rounded-full opacity-90" 
-          
-       width={400}
-          src="/pic.png"
-        />
+          <img
+            className="grayscale-[100%] rounded-full opacity-90"
+            width={400}
+            src="/pic.png"
+          />
         </div>
       </div>
       <div className="w-full flex justify-between z-0 items-center -mt-36 mb-20">
         <motion.div
-        initial={{rotate:90}}
+          initial={{ rotate: 90 }}
           animate={{
             scale: 1.1,
             textShadow: "0 0 8px white",
-         
+
             transition: { duration: 1.1, repeat: Infinity },
           }}
-        className="flex items-center text-sm w-28 justify-between ">
+          className="flex items-center text-sm w-28 justify-between "
+        >
           Scroll Down
           <AiOutlineArrowRight />
         </motion.div>
         <motion.div
-         initial={{rotate:90}}
+          initial={{ rotate: 90 }}
           animate={{
             scale: 1.1,
             textShadow: "0 0 8px white",
-           
+
             transition: { duration: 1.1, repeat: Infinity },
           }}
-        className="flex items-center text-sm w-28 justify-between ">
+          className="flex items-center text-sm w-28 justify-between "
+        >
           Scroll Down
           <AiOutlineArrowRight />
         </motion.div>
-       
       </div>
     </>
   );
