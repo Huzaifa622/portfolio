@@ -29,7 +29,7 @@ const About = () => {
       <div className=" h-screen">
         <div className="flex items-end justify-center">
           <div className="flex w-[90%] items-end">
-            <h1 className="text-7xl font-extrabold mt-12">
+            <h1 className="text-5xl lg:text-7xl font-extrabold mt-16">
               About<span className="text-tred">.</span>
             </h1>
             <div className="w-full ml-4 h-1 bg-tred mb-2">
@@ -38,10 +38,10 @@ const About = () => {
           </div>
         </div>
         <RevealX>
-          <div className="m-32  h-screen flex flex-wrap">
-            <div className="gap-8 w-[60%] mr-4 flex flex-col">
-              <p className="text-lg">
-                <span className="font-bold text-2xl bg-tred p-2 rounded-lg  m-1">
+          <div className=" h-screen m-10 my-6 lg:m-32 lg:flex">
+            <div className="gap-8 w-full mr-2 flex flex-col">
+              <p >
+                <span className="font-bold text-base bg-tred p-2 rounded-lg  ">
                   H
                 </span>
                 ey,I'm Huzaifa and I'm a passionate web developer with a flair
@@ -64,13 +64,13 @@ const About = () => {
                 leave a lasting impression.
               </p>
             </div>
-            <div className=" ml-4 gap-8 flex flex-col w-[30%]">
+            <div className=" lg:ml-4 lg:w-[40%] my-4 gap-8 flex flex-col w-[100%]">
               <div>
-                <h1 className="flex text-2xl items-center text-center gap-3 font-extrabold">
+                <h1 className="flex text-lg items-center text-center font-extrabold">
                   <CiCircleChevRight className="bg-tred rounded-md" size={30} />
                   My Skills
                 </h1>
-                <div className="flex gap-4 mt-4 flex-wrap">
+                <div className="flex  gap-2 mt-4 flex-wrap">
                   <motion.span
                     whileHover={{
                       scale: 1.1,
@@ -78,7 +78,7 @@ const About = () => {
                       textShadow: "0 0 8px white",
                       backgroundColor: "red",
                     }}
-                    className="flex items-center gap-1 text-center p-3 pt-0 pb-0 border-tred border rounded-lg hover:cursor-pointer"
+                    className="flex items-center gap-1 text-center p-3 py-0 border-tred border rounded-lg hover:cursor-pointer"
                   >
                     HTML
                     <AiFillHtml5 size={20} />
@@ -171,7 +171,7 @@ const About = () => {
               </div>
               <div className="flex items-center text-center ">
                 {" "}
-                <span className="flex items-center text-tred">
+                <span className="flex items-center text-tred cursor-pointer">
                   My Links
                   <AiOutlineArrowRight className="ml-4" />
                 </span>

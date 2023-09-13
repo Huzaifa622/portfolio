@@ -12,8 +12,8 @@ const Navbar = () => {
               Huzaifa<span className="text-tred ">.</span>
             </h2>
           </div>
-          <div className="w-[50%]">
-            <ul className="flex justify-evenly z-10 text-center">
+          <div className="w-[100%]  flex justify-end items-center">
+            <ul className=" w-[40%]  z-10 text-center hidden sm:flex justify-between mx-10">
               <motion.li
                 whileHover={{
                   scale: 1.1,
@@ -58,6 +58,7 @@ const Navbar = () => {
               >
                 Contact
               </motion.li>
+            </ul>
               <motion.a
                 href="/Resume.pdf"
                 whileHover={{
@@ -66,11 +67,10 @@ const Navbar = () => {
                   textShadow: "0 0 8px white",
                   backgroundColor: "red",
                 }}
-                className="bg-tred text-twhite p-2 pb-1 pt-1  rounded-lg "
+                className="bg-tred text-twhite p-2 py-2  rounded-lg "
               >
-                My Resume
+                Download Resume
               </motion.a>
-            </ul>
           </div>
         </nav>
       </div>

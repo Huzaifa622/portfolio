@@ -20,31 +20,28 @@ export default function Home() {
   };
   return (
     <div
-      className={`h-full text-lg ${
+      className={`h-full text-xs md:text-xs lg:text-lg overflow-hidden ${
         theme ? "bg-twhite text-black " : "bg-black text-twhite"
       }  `}
     >
-      {/* <CustomCursor/> */}
-      {/* <TsParticles/> */}
       <Navbar />
       <Links />
-      <div className="h-full w-full snap-center" id="herobanner">
+      <div className="h-screen w-full snap-center" id="herobanner">
         <HeroBanner />
         <button
           onClick={handleTheme}
-          className="fixed z-20 top-5 left-72 bg-tred rounded-lg"
+          className="fixed z-20 top-5 md:left-72 left-5 bg-tred rounded-lg"
         >
           {theme ? <HiMoon size={30} /> : <CiSun size={30} />}
         </button>
       </div>
-      <div id="about">
+      <div id="about" className="h-screen">
         <About />
       </div>
-      <div id="projects">
+      <div id="projects" className="h-screen">
         <Projects />
       </div>
-
-      <div id="contact">
+      <div id="contact" className="h-screen">
         <Contact />
       </div>
     </div>

@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
-import { CiCircleChevRight } from "react-icons/ci";
-import { RiJavascriptFill } from "react-icons/ri";
+
 import {
   BiLogoCss3,
   BiLogoFirebase,
@@ -10,20 +9,13 @@ import {
   BiLogoLinkedinSquare,
   BiLogoGithub,
 } from "react-icons/bi";
-import { TbBrandNextjs } from "react-icons/tb";
-import { FaReact } from "react-icons/fa";
-// import {IoLogoJavascript} from 'react-icons/io'
-import {
-  AiFillHtml5,
-  AiOutlineArrowRight,
-  AiOutlineGoogle,
-} from "react-icons/ai";
+
 import Link from "next/link";
 
 const Links = () => {
   return (
     <>
-      <div className="fixed p-1 pb-2 pt-4 top-[35%] rounded-full left-[95%] z-20  backdrop-blur-md backdrop-filter ">
+      <div className="fixed p-1 pb-2 pt-4 top-[35%] rounded-full left-[90%] lg:left-[95%] z-20   ">
         <div className="flex flex-col gap-2">
           <motion.span
             whileHover={{

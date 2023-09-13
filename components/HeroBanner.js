@@ -7,22 +7,22 @@ import RevealY from "./RevealY";
 const HeroBanner = () => {
   return (
     <>
-      <div className=" w-full h-screen flex">
+      <div className=" w-full h-screen flex flex-wrap">
         <div className="relative z-10">
-          <div className="m-32 w-[50%]">
+          <div className="m-32 w-[60%] md:w-[50%]">
             <RevealY>
-              <h3 className="lg:text-7xl md:text-6xl font-extrabold">
+              <h3 className="text-4xl md:text-7xl font-extrabold">
                 Hey,I&apos;m Huzaifa<span className="text-tred">.</span>
               </h3>
-              <h1 className="text-4xl mt-5">
+              <h1 className="text-2xl mt-5">
                 I&apos;m a{" "}
-                <span className="text-tred text-4xl font-bold">
+                <span className="text-transparent bg-gradient-to-r bg-clip-text from-tred to-red-700 text-3xl font-bold">
                   Full Stack Developer
                 </span>{" "}
               </h1>
             </RevealY>
             <RevealY>
-              <p className="text-lg mt-5">
+              <p className="mt-5">
                 I'm a passionate and creative web developer with a strong desire
                 to turn ideas into captivating digital experiences.I've spent
                 1.5+ years in web developing.My work is driven by a commitment
@@ -47,7 +47,7 @@ const HeroBanner = () => {
             </RevealY>
           </div>
         </div>
-        <div className="absolute left-[60%] top-32 rounded-full bg-tred">
+        <div className="hidden sm:block absolute left-[60%] top-32 rounded-full bg-transparent bg-gradient-to-t from-slate-950 to-tred">
           <img
             className="grayscale-[100%] rounded-full opacity-90"
             width={400}
