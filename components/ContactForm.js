@@ -25,7 +25,7 @@ function ContactForm() {
 
   return (
     <>
-      <motion.div className="max-w-2xl  mx-auto p-6  rounded-md ">
+      <motion.div className="max-w-2xl  mx-auto pt-3 px-16 rounded-md ">
         <h2 className="text-2xl font-semibold mb-4">Contact</h2>
         <form onSubmit={handleSubmit}>
           <div className="mb-4">
@@ -67,7 +67,7 @@ function ContactForm() {
               onChange={handleChange}
               className="w-full p-2 border border-gray-300 rounded-md text-black"
               autoComplete="false"
-              rows="4"
+              rows="3"
               required
             ></textarea>
           </div>

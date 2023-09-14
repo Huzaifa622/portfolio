@@ -7,8 +7,8 @@ import RevealY from "./RevealY";
 const HeroBanner = () => {
   return (
     <>
-      <div className=" w-full h-screen flex flex-wrap">
-        <div className="relative z-10">
+      <div className=" w-full h-screen flex flex-wrap relative">
+        <div className=" z-10">
           <div className="m-32 w-[60%] md:w-[50%]">
             <RevealY>
               <h3 className="text-4xl md:text-7xl font-extrabold">
@@ -47,7 +47,7 @@ const HeroBanner = () => {
             </RevealY>
           </div>
         </div>
-        <div className="hidden sm:block absolute left-[60%] top-32 rounded-full bg-transparent bg-gradient-to-t from-slate-950 to-tred">
+        <div className="absolute hidden sm:block  left-[60%] top-32 rounded-full bg-transparent bg-gradient-to-t from-slate-950 to-tred">
           <img
             className="grayscale-[100%] rounded-full opacity-90"
             width={400}

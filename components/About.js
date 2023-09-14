@@ -38,10 +38,10 @@ const About = () => {
           </div>
         </div>
         <RevealX>
-          <div className=" h-screen m-10 my-6 lg:m-32 lg:flex">
+          <div className=" h-screen my-6 md:m-28 md:my-20 my-30 m-14  lg:flex">
             <div className="gap-8 w-full mr-2 flex flex-col">
               <p >
-                <span className="font-bold text-base bg-tred p-2 rounded-lg  ">
+                <span className="font-bold text-base lg:text-3xl bg-tred p-2 rounded-lg  ">
                   H
                 </span>
                 ey,I'm Huzaifa and I'm a passionate web developer with a flair

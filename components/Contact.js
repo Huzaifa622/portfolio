@@ -12,7 +12,7 @@ const Contact = () => {
             <div className="w-full mr-4 h-1 bg-tred mb-2">
               <hr />
             </div>
-            <h1 className="text-5xl lg:text-7xl font-extrabold mt-12">
+            <h1 className="text-5xl lg:text-7xl font-extrabold mt-16">
               <span className="text-tred">.</span>Contact
             </h1>
           </div>
@@ -22,7 +22,7 @@ const Contact = () => {
         </div>
         <div className="w-full flex justify-center">
           <motion.div
-            whileHover={{
+            animate={{
               boxShadow: "0 0 18px red",
               textShadow: "0 0 8px white",
               backgroundColor: "red",

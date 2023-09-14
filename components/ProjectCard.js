@@ -5,7 +5,7 @@ import RevealXY from "./RevealXY";
 
 const ProjectCard = (props) => {
   return (
-    <RevealXY>
+  
       <motion.div
         className="rounded-lg p-4 hover:shadow-xl transition duration-300 ease-in-out"
         whileHover={{ scale: 1.1 }}
@@ -28,7 +28,7 @@ const ProjectCard = (props) => {
           </a>
         </div>
       </motion.div>
-    </RevealXY>
+
   );
 };
 

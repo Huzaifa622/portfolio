@@ -20,13 +20,13 @@ export default function Home() {
   };
   return (
     <div
-      className={`h-full text-xs md:text-xs lg:text-lg overflow-hidden ${
+      className={`w-screen h-screen text-xs md:text-md lg:text-md xl:text-lg  snap-y snap-mandatory overflow-x-hidden ${
         theme ? "bg-twhite text-black " : "bg-black text-twhite"
       }  `}
     >
       <Navbar />
       <Links />
-      <div className="h-screen w-full snap-center" id="herobanner">
+      <div className="h-screen w-screen snap-start" id="herobanner">
         <HeroBanner />
         <button
           onClick={handleTheme}
@@ -35,13 +35,13 @@ export default function Home() {
           {theme ? <HiMoon size={30} /> : <CiSun size={30} />}
         </button>
       </div>
-      <div id="about" className="h-screen">
+      <div id="about" className="h-screen w-screen snap-start">
         <About />
       </div>
-      <div id="projects" className="h-screen">
+      <div id="projects" className="h-screen snap-start">
         <Projects />
       </div>
-      <div id="contact" className="h-screen">
+      <div id="contact" className="h-screen w-screen snap-start">
         <Contact />
       </div>
     </div>
