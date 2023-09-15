@@ -38,9 +38,9 @@ const About = () => {
           </div>
         </div>
         <RevealX>
-          <div className=" h-screen my-6 md:m-28 md:my-20 my-30 m-14  lg:flex">
+          <div className=" h-screen my-6 md:m-28 md:my-20 m-10  lg:flex">
             <div className="gap-8 w-full mr-2 flex flex-col">
-              <p >
+              <p>
                 <span className="font-bold text-base lg:text-3xl bg-tred p-2 rounded-lg  ">
                   H
                 </span>
@@ -48,20 +48,16 @@ const About = () => {
                 for crafting digital experiences that blend creativity with
                 functionality. With a solid foundation in front-end and back-end
                 technologies, I thrive on turning ideas into beautifully
-                designed, user-friendly websites and web applications.{" "}
+                designed, user-friendly websites and web applications.
               </p>
               <p>
                 My fascination with web development was sparked by its unique
-                blend of creativity and technology. I believe that the web is
-                the canvas of the future, and I am eager to contribute to its
-                evolution. Whether it's crafting pixel-perfect user interfaces
-                or writing efficient, elegant code, I find joy in every aspect
-                of the development process.I'm always on the lookout for
-                exciting web development projects and collaborations. Whether
-                you're an individual with a vision or a business seeking to
-                enhance your online presence, I'm here to turn your ideas into
-                reality. Let's work together to create stunning websites that
-                leave a lasting impression.
+                blend of creativity and technology. I'm
+                always on the lookout for exciting web development projects and
+                collaborations. Whether you're an individual with a vision or a
+                business seeking to enhance your online presence, I'm here to
+                turn your ideas into reality. Let's work together to create
+                stunning websites that leave a lasting impression.
               </p>
             </div>
             <div className=" lg:ml-4 lg:w-[40%] my-4 gap-8 flex flex-col w-[100%]">

@@ -1,43 +1,46 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import { BiLogoGmail } from "react-icons/bi";
+import emailjs from "@emailjs/browser";
 
 function ContactForm() {
-  const [formData, setFormData] = useState({
-    username: "",
-    email: "",
-    message: "",
-  });
+ 
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({
-      ...formData,
-      [name]: value,
-    });
-  };
+  const formRef = useRef();
 
-  const handleSubmit = (e) => {
+  const sendEmail = (e) => {
     e.preventDefault();
-    // You can handle form submission logic here
-    console.log(formData);
+  
+    emailjs
+      .sendForm(
+        "service_knr9gpe",
+        "template_ykal3u4",
+        formRef.current,
+        "jpd2qzH4p2xn7sH1o"
+      )
+      .then(
+        (result) => {
+          alert("success", result);
+        },
+        (error) => {
+          alert(error.text);
+        }
+      );
   };
 
   return (
     <>
       <motion.div className="max-w-2xl  mx-auto pt-3 px-16 rounded-md ">
         <h2 className="text-2xl font-semibold mb-4">Contact</h2>
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={sendEmail} ref={formRef}>
           <div className="mb-4">
             <label htmlFor="username" className="block ">
               Username
             </label>
             <input
               type="text"
-              id="username"
-              name="username"
-              value={formData.username}
-              onChange={handleChange}
+        
+              name="from_name"
               className="w-full p-2 border border-gray-300 rounded-md text-black"
               required
             />
@@ -48,10 +51,9 @@ function ContactForm() {
             </label>
             <input
               type="email"
-              id="email"
-              name="email"
-              value={formData.email}
-              onChange={handleChange}
+          
+              name="email_id"
+
               className="w-full p-2 border border-gray-300 rounded-md text-black"
               required
             />
@@ -61,10 +63,9 @@ function ContactForm() {
               Message
             </label>
             <textarea
-              id="message"
+       
               name="message"
-              value={formData.message}
-              onChange={handleChange}
+
               className="w-full p-2 border border-gray-300 rounded-md text-black"
               autoComplete="false"
               rows="3"

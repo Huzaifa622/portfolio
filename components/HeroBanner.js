@@ -9,7 +9,7 @@ const HeroBanner = () => {
     <>
       <div className=" w-full h-screen flex flex-wrap relative">
         <div className=" z-10">
-          <div className="m-32 w-[60%] md:w-[50%]">
+          <div className="m-28 w-[50%] md:w-[50%]">
             <RevealY>
               <h3 className="text-4xl md:text-7xl font-extrabold">
                 Hey,I&apos;m Huzaifa<span className="text-tred">.</span>

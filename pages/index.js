@@ -30,7 +30,7 @@ export default function Home() {
         <HeroBanner />
         <button
           onClick={handleTheme}
-          className="fixed z-20 top-5 md:left-72 left-5 bg-tred rounded-lg"
+          className="fixed z-20 top-5 md:left-72 lg:left-80 xl:left-96 left-3 bg-tred rounded-lg"
         >
           {theme ? <HiMoon size={30} /> : <CiSun size={30} />}
         </button>

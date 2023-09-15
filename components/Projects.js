@@ -19,19 +19,23 @@ const Projects = () => {
         </div>
         <div className="m-32 my-6 lg:m-32">
           <RevealY>
-            <div className="flex gap-4 w-full ">
-              {ProjectList.map((project, index) => {
-                return (
-                  <ProjectCard
-                    key={index}
-                    image={project.image}
-                    href={project.href}
-                    heading={project.heading}
-                    technologies={project.technologies}
-                  />
-                );
-              })}
-            </div>
+          <div className="">
+      {ProjectList.map((project, index) => {
+        return (
+          <div
+            key={index}
+            className="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 flex flex-wrap gap-4 h-10" // Adjust the column width based on screen size
+          >
+            <ProjectCard
+              image={project.image}
+              href={project.href}
+              heading={project.heading}
+              technologies={project.technologies}
+            />
+          </div>
+        );
+      })}
+    </div>
           </RevealY>
         </div>
       </div>
