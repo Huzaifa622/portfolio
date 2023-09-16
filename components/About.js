@@ -38,7 +38,7 @@ const About = () => {
           </div>
         </div>
         <RevealX>
-          <div className=" h-screen my-6 md:m-28 md:my-20 m-10  lg:flex">
+          <div className="  flex   mx-8 my-8 flex-col  md:m-28 md:my-6 lg:flex-row  lg:my-14 ">
             <div className="gap-8 w-full mr-2 flex flex-col">
               <p>
                 <span className="font-bold text-base lg:text-3xl bg-tred p-2 rounded-lg  ">

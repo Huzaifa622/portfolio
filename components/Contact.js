@@ -2,10 +2,12 @@ import React from "react";
 import ContactForm from "./ContactForm";
 import { motion } from "framer-motion";
 import { BiLogoGmail } from "react-icons/bi";
+import RevealY from "./RevealY";
 
 const Contact = () => {
   return (
     <>
+ 
       <div className=" h-screen ">
         <div className="flex items-end justify-center">
           <div className="flex w-[90%] items-end">
@@ -20,6 +22,7 @@ const Contact = () => {
         <div className="w-full text-center">
           <ContactForm /> <span className="text-2xl ">OR</span>
         </div>
+        <RevealY>
         <div className="w-full flex justify-center">
           <motion.div
             animate={{
@@ -32,6 +35,7 @@ const Contact = () => {
             <BiLogoGmail size={25} />: thuzaifa07@gmail.com
           </motion.div>
         </div>
+        </RevealY>
       </div>
     </>
   );

@@ -20,7 +20,7 @@ export default function Home() {
   };
   return (
     <div
-      className={`w-screen h-screen text-xs md:text-md lg:text-md xl:text-lg  snap-y snap-mandatory overflow-x-hidden ${
+      className={`w-screen h-screen text-xs sm:text-sm md:text-lg lg:text-lg xl:text-xl 2xl:text-2xl snap-y snap-mandatory overflow-x-hidden ${
         theme ? "bg-twhite text-black " : "bg-black text-twhite"
       }  `}
     >

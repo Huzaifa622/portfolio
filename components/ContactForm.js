@@ -2,6 +2,7 @@ import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import { BiLogoGmail } from "react-icons/bi";
 import emailjs from "@emailjs/browser";
+import RevealX from "./RevealX";
 
 function ContactForm() {
  
@@ -30,6 +31,7 @@ function ContactForm() {
 
   return (
     <>
+    <RevealX>
       <motion.div className="max-w-2xl  mx-auto pt-3 px-16 rounded-md ">
         <h2 className="text-2xl font-semibold mb-4">Contact</h2>
         <form onSubmit={sendEmail} ref={formRef}>
@@ -88,6 +90,7 @@ function ContactForm() {
           </div>
         </form>
       </motion.div>
+      </RevealX>
     </>
   );
 }

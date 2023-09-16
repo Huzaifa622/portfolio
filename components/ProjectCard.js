@@ -6,7 +6,7 @@ import RevealXY from "./RevealXY";
 const ProjectCard = (props) => {
   return (
     <motion.div
-      className="rounded-lg p-4  hover:shadow-xl transition duration-300 ease-in-out flex flex-wrap"
+      className="rounded-lg p-4  hover:shadow-xl transition duration-300 ease-in-out"
       whileHover={{ scale: 1.1 }}
     >
       <img

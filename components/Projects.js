@@ -17,14 +17,14 @@ const Projects = () => {
             </h1>
           </div>
         </div>
-        <div className="m-32 my-6 lg:m-32">
+        <div className=" lg:mx-20 h-[50%]  ">
           <RevealY>
-          <div className="">
+          <div className="my-20 flex flex-wrap justify-center items-center">
       {ProjectList.map((project, index) => {
         return (
           <div
             key={index}
-            className="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 flex flex-wrap gap-4 h-10" // Adjust the column width based on screen size
+            className=" w-[20%] " // Adjust the column width based on screen size
           >
             <ProjectCard
               image={project.image}

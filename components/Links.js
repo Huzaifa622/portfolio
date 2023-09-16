@@ -15,7 +15,7 @@ import Link from "next/link";
 const Links = () => {
   return (
     <>
-      <div className="fixed p-1 pb-2 pt-4 top-[35%] rounded-full left-[90%] lg:left-[95%] z-20   ">
+      <div className="fixed p-1 pb-2 pt-4 top-[35%] rounded-full left-[85%] lg:left-[95%] z-20   ">
         <div className="flex flex-col gap-2">
           <motion.span
             whileHover={{
