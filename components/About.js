@@ -42,22 +42,16 @@ const About = () => {
             <div className="gap-8 w-full mr-2 flex flex-col">
               <p>
                 <span className="font-bold text-base lg:text-3xl bg-tred p-2 rounded-lg  ">
-                  H
+                  {"H"}
                 </span>
-                ey,I'm Huzaifa and I'm a passionate web developer with a flair
-                for crafting digital experiences that blend creativity with
-                functionality. With a solid foundation in front-end and back-end
-                technologies, I thrive on turning ideas into beautifully
-                designed, user-friendly websites and web applications.
+                {
+                  "ey,I'm Huzaifa and I'm a passionate web developer with a flair for crafting digital experiences that blend creativity withfunctionality. With a solid foundation in front-end and back-endtechnologies, I thrive on turning ideas into beautifullydesigned, user-friendly websites and web applications."
+                }
               </p>
               <p>
-                My fascination with web development was sparked by its unique
-                blend of creativity and technology. I'm always on the lookout
-                for exciting web development projects and collaborations.
-                Whether you're an individual with a vision or a business seeking
-                to enhance your online presence, I'm here to turn your ideas
-                into reality. Let's work together to create stunning websites
-                that leave a lasting impression.
+                {
+                  "My fascination with web development was sparked by its unique blend of creativity and technology. I'm always on the lookoutfor exciting web development projects and collaborations.Whether you're an individual with a vision or a business seekingto enhance your online presence, I'm here to turn your ideasinto reality. Let's work together to create stunning websitesthat leave a lasting impression."
+                }
               </p>
             </div>
             <div className=" lg:ml-4 lg:w-[40%] my-4 gap-8 flex flex-col w-[100%]">
