@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { scrollTo } from "@/pages/services";
+import { scrollTo } from "@/services";
 
 const Navbar = () => {
   return (
@@ -59,18 +59,18 @@ const Navbar = () => {
                 Contact
               </motion.li>
             </ul>
-              <motion.a
-                href="/Resume.pdf"
-                whileHover={{
-                  scale: 1.1,
-                  boxShadow: "0 0 18px red",
-                  textShadow: "0 0 8px white",
-                  backgroundColor: "red",
-                }}
-                className="bg-tred text-twhite p-2 py-2  rounded-lg "
-              >
-                Download Resume
-              </motion.a>
+            <motion.a
+              href="/Resume.pdf"
+              whileHover={{
+                scale: 1.1,
+                boxShadow: "0 0 18px red",
+                textShadow: "0 0 8px white",
+                backgroundColor: "red",
+              }}
+              className="bg-tred text-twhite p-2 py-2  rounded-lg "
+            >
+              Download Resume
+            </motion.a>
           </div>
         </nav>
       </div>

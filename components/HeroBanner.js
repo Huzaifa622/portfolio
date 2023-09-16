@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { AiOutlineArrowRight } from "react-icons/ai";
-import { scrollTo } from "@/pages/services";
+import { scrollTo } from "@/services";
 
 import RevealY from "./RevealY";
 import Image from "next/image";
