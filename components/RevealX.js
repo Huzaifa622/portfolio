@@ -9,7 +9,7 @@ const RevealX = ({ children }) => {
     if (inView) {
       startAnimation.start("visible");
     }
-  }, [inView]);
+  }, [inView,startAnimation]);
   return (
     <div ref={ref} className="relative overflow-hidden">
       <motion.div
