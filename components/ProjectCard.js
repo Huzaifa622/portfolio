@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import RevealX from "./RevealX";
 import RevealXY from "./RevealXY";
+import Image from "next/image";
 
 const ProjectCard = (props) => {
   return (
@@ -9,7 +10,9 @@ const ProjectCard = (props) => {
       className="rounded-lg p-4  hover:shadow-xl transition duration-300 ease-in-out"
       whileHover={{ scale: 1.1 }}
     >
-      <img
+      <Image
+      width={400}
+      height={400}
         src={props.image}
         alt={props.title}
         className="h-40 object-cover rounded-md "

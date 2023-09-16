@@ -52,12 +52,12 @@ const About = () => {
               </p>
               <p>
                 My fascination with web development was sparked by its unique
-                blend of creativity and technology. I'm
-                always on the lookout for exciting web development projects and
-                collaborations. Whether you're an individual with a vision or a
-                business seeking to enhance your online presence, I'm here to
-                turn your ideas into reality. Let's work together to create
-                stunning websites that leave a lasting impression.
+                blend of creativity and technology. I'm always on the lookout
+                for exciting web development projects and collaborations.
+                Whether you're an individual with a vision or a business seeking
+                to enhance your online presence, I'm here to turn your ideas
+                into reality. Let's work together to create stunning websites
+                that leave a lasting impression.
               </p>
             </div>
             <div className=" lg:ml-4 lg:w-[40%] my-4 gap-8 flex flex-col w-[100%]">

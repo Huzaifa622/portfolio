@@ -4,6 +4,7 @@ import { AiOutlineArrowRight } from "react-icons/ai";
 import { scrollTo } from "@/pages/services";
 
 import RevealY from "./RevealY";
+import Image from "next/image";
 const HeroBanner = () => {
   return (
     <>
@@ -15,7 +16,7 @@ const HeroBanner = () => {
                 Hey,I&apos;m Huzaifa<span className="text-tred">.</span>
               </h3>
               <h1 className="text-2xl mt-5">
-                I&apos;m a{" "}
+                I&lsquo;m a{" "}
                 <span className="text-transparent bg-gradient-to-r bg-clip-text from-tred to-red-700 text-3xl font-bold">
                   Full Stack Developer
                 </span>{" "}
@@ -48,9 +49,10 @@ const HeroBanner = () => {
           </div>
         </div>
         <div className="absolute hidden sm:block  left-[60%] top-32 rounded-full bg-transparent bg-gradient-to-t from-slate-950 to-tred">
-          <img
+          <Image
             className="grayscale-[100%] rounded-full opacity-90"
             width={400}
+            height={400}
             src="/pic.png"
           />
         </div>
