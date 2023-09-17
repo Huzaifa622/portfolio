@@ -12,6 +12,7 @@ import {
   BiLogoFacebookSquare,
   BiLogoLinkedinSquare,
   BiLogoGithub,
+  BiLogoRedux
 } from "react-icons/bi";
 import { TbBrandNextjs } from "react-icons/tb";
 import { FaReact } from "react-icons/fa";
@@ -156,6 +157,18 @@ const About = () => {
                   >
                     MongoDB
                     <BiLogoMongodb size={20} />
+                  </motion.span>
+                  <motion.span
+                    whileHover={{
+                      scale: 1.1,
+                      boxShadow: "0 0 18px red",
+                      textShadow: "0 0 8px white",
+                      backgroundColor: "red",
+                    }}
+                    className="flex items-center gap-1 text-center p-3 pt-0 pb-0 border-tred border rounded-lg hover:cursor-pointer"
+                  >
+                    Redux
+                    <BiLogoRedux size={20} />
                   </motion.span>
                 </div>
               </div>
