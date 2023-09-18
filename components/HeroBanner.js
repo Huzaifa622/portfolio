@@ -25,7 +25,7 @@ const HeroBanner = () => {
             <RevealY>
               <p className="mt-5">
                 {
-                  "I'm a passionate and creative web developer with a strong desire to turn ideas into captivating digital experiences.I've spent 1.5+ years in web developing.My work is driven by a commitmentto excellence, attention to detail, and a keen eye for design. Itake pride in delivering solutions that are user-friendly andtailored to meet the specific needs of my clients."
+                  "I'm a passionate and creative web developer with a strong desire to turn ideas into captivating digital experiences. I've spent 1.5+ years in web developing.My work is driven by a commitment to excellence, attention to detail, and a keen eye for design. I take pride in delivering solutions that are user-friendly and tailored to meet the specific needs of my clients."
                 }
                 {"let's connect!!"}
               </p>

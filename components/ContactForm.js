@@ -36,24 +36,20 @@ function ContactForm() {
         <h2 className="text-2xl font-semibold mb-4">Contact</h2>
         <form onSubmit={sendEmail} ref={formRef}>
           <div className="mb-4">
-            <label htmlFor="username" className="block ">
-              Username
-            </label>
+           
             <input
               type="text"
-        
+        placeholder="Username"
               name="from_name"
               className="w-full p-2 border border-gray-300 rounded-md text-black"
               required
             />
           </div>
           <div className="mb-4">
-            <label htmlFor="email" className="block ">
-              Email
-            </label>
+     
             <input
               type="email"
-          
+          placeholder="Email"
               name="email_id"
 
               className="w-full p-2 border border-gray-300 rounded-md text-black"
@@ -61,13 +57,11 @@ function ContactForm() {
             />
           </div>
           <div className="mb-4">
-            <label htmlFor="message" className="block ">
-              Message
-            </label>
+           
             <textarea
        
               name="message"
-
+placeholder="Message"
               className="w-full p-2 border border-gray-300 rounded-md text-black"
               autoComplete="false"
               rows="3"

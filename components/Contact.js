@@ -1,8 +1,9 @@
 import React from "react";
 import ContactForm from "./ContactForm";
 import { motion } from "framer-motion";
-import { BiLogoGmail } from "react-icons/bi";
+
 import RevealY from "./RevealY";
+import Footer from "./Footer";
 
 const Contact = () => {
   return (
@@ -18,10 +19,10 @@ const Contact = () => {
             </div>
           </div>
         </div>
-        <div className="w-full text-center">
-          <ContactForm /> <span className="text-2xl ">OR</span>
+        <div className="w-full text-center my-3">
+          <ContactForm /> 
         </div>
-        <RevealY>
+        {/* <RevealY>
           <div className="w-full flex justify-center">
             <motion.div
               animate={{
@@ -34,7 +35,8 @@ const Contact = () => {
               <BiLogoGmail size={25} />: thuzaifa07@gmail.com
             </motion.div>
           </div>
-        </RevealY>
+        </RevealY> */}
+        <Footer/>
       </div>
     </>
   );
