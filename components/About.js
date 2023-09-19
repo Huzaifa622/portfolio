@@ -27,7 +27,7 @@ import Link from "next/link";
 const About = () => {
   return (
     <>
-      <div className=" h-screen">
+      <div>
         <div className="flex items-end justify-center">
           <div className="flex w-[90%] items-end">
             <h1 className="text-5xl lg:text-7xl font-extrabold mt-16">

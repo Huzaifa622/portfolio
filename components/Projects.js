@@ -6,7 +6,7 @@ import RevealY from "./RevealY";
 const Projects = () => {
   return (
     <>
-      <div className="h-screen">
+      <div >
         <div className="flex items-end justify-center">
           <div className="flex w-[90%] items-end">
             <div className="w-full mr-4 h-1 bg-tred mb-2">

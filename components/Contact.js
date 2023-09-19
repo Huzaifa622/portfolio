@@ -8,7 +8,7 @@ import Footer from "./Footer";
 const Contact = () => {
   return (
     <>
-      <div className=" h-screen ">
+      <div >
         <div className="flex items-end justify-center">
           <div className="flex w-[90%] items-end">
             <h1 className="text-5xl lg:text-7xl font-extrabold mt-16">
@@ -19,7 +19,7 @@ const Contact = () => {
             </div>
           </div>
         </div>
-        <div className="w-full text-center my-3">
+        <div className="w-full text-center my-14 md:my-8">
           <ContactForm /> 
         </div>
         {/* <RevealY>
@@ -36,7 +36,7 @@ const Contact = () => {
             </motion.div>
           </div>
         </RevealY> */}
-        <Footer/>
+        
       </div>
     </>
   );

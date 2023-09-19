@@ -8,7 +8,7 @@ import Image from "next/image";
 const HeroBanner = () => {
   return (
     <>
-      <div className=" w-full h-screen flex flex-wrap relative">
+      <div className="  flex flex-wrap relative">
         <div className=" z-10">
           <div className="m-28 mx-16 w-[65%] md:w-[50%]">
             <RevealY>

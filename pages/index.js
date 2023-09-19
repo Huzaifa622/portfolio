@@ -10,6 +10,8 @@ import Contact from "@/components/Contact";
 import CustomCursor from "@/components/CustomCursor";
 import Navbar from "@/components/Navbar";
 import Links from "@/components/Links";
+import GotoTop from "@/components/GotoTop";
+import Footer from "@/components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -26,6 +28,7 @@ export default function Home() {
     >
       <Navbar />
       <Links />
+      <GotoTop/>
       <div className="h-screen w-screen snap-start" id="herobanner">
         <HeroBanner />
         <button
@@ -43,6 +46,7 @@ export default function Home() {
       </div>
       <div id="contact" className="h-screen w-screen snap-start">
         <Contact />
+        <Footer/>
       </div>
     </div>
   );
