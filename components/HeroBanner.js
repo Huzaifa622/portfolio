@@ -47,11 +47,12 @@ const HeroBanner = () => {
         </div>
         <div className="absolute hidden sm:block  left-[60%] top-32 rounded-full bg-transparent bg-gradient-to-t from-slate-950 to-tred">
           <Image
-            className="grayscale-[100%] rounded-full opacity-90"
-            width={400}
-            height={400}
+            className="grayscale-[100%] rounded-full opacity-90 w-auto h-auto"
+            width={300}
+            height={300}
             src="/pic.png"
-            alt="/image"
+            alt="image"
+            priority
           />
         </div>
       </div>

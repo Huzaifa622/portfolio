@@ -15,7 +15,8 @@ const ProjectCard = (props) => {
       height={400}
         src={props.image}
         alt={props.title}
-        className="h-40 object-cover rounded-md "
+        loading="eager"
+        className=" object-cover rounded-md w-auto h-auto "
       />
       <h2 className="text-xl lg:text-2xl font-semibold mt-4">{props.heading}</h2>
       <p className="text-gray-600 mt-2 lg:text-base">{props.description}</p>
