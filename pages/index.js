@@ -22,14 +22,14 @@ export default function Home() {
   };
   return (
     <div
-      className={`w-screen h-screen text-xs sm:text-sm md:text-lg lg:text-lg xl:text-xl 2xl:text-2xl snap-y snap-mandatory overflow-x-hidden ${
+      className={` text-xs sm:text-sm md:text-lg lg:text-lg xl:text-xl 2xl:text-2xl snap-y snap-mandatory overflow-x-hidden ${
         theme ? "bg-twhite text-black " : "bg-black text-twhite"
       }  `}
     >
       <Navbar />
       <Links />
       <GotoTop/>
-      <div className="h-screen w-screen snap-start" id="herobanner">
+      <div className="h-screen w-screen " id="herobanner">
         <HeroBanner />
         <button
           onClick={handleTheme}
@@ -38,13 +38,13 @@ export default function Home() {
           {theme ? <HiMoon size={30} /> : <CiSun size={30} />}
         </button>
       </div>
-      <div id="about" className="h-screen w-screen snap-start">
+      <div id="about" className="h-screen w-screen ">
         <About />
       </div>
-      <div id="projects" className="h-screen snap-start">
+      <div id="projects" className="h-screen w-screen ">
         <Projects />
       </div>
-      <div id="contact" className="h-screen w-screen snap-start">
+      <div id="contact" className="h-screen w-screen ">
         <Contact />
         <Footer/>
       </div>

@@ -8,7 +8,7 @@
 }
 
 ::-webkit-scrollbar {
-    width: 5px;
+    @apply w-[0px] md:w-[1px]
 }
   
 /* Track */

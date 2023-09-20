@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { AiOutlineArrowUp } from "react-icons/ai";
-
+import RevealY from "./RevealY";
+import { motion } from "framer-motion";
 const GotoTop = () => {
   const [visible, setVisible] = useState(false);
 
@@ -14,7 +15,7 @@ const GotoTop = () => {
     let winScroll =
       document.body.scrollTop || document.documentElement.scrollTop;
 
-    if (winScroll > heightScroll) {
+    if (window.scrollY > heightScroll) {
       setVisible(true);
     } else {
       setVisible(false);
@@ -33,12 +34,20 @@ const GotoTop = () => {
   return (
     <>
       {visible && (
-        <div
-          className="fixed top-[90%] cursor-pointer left-[85%] lg:left-[95%] bg-tred rounded full"
+     
+        <motion.div
+        
+        animate={{
+          y: -12,
+          textShadow: "0 0 8px white",
+
+          transition: { duration: 1.1, repeat: Infinity },
+        }}
+          className="fixed top-[90%] lg:top-[85%] p-2 lg:p-4 rounded-full z-50 cursor-pointer left-[85%] lg:left-[90%] bg-tred rounded full"
           onClick={scrollTop}
         >
           <AiOutlineArrowUp size={25} />
-        </div>
+        </motion.div>
       )}
     </>
   );

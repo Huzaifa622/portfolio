@@ -3,7 +3,7 @@ import { BiLogoGmail } from "react-icons/bi";
 const Footer = () => {
   return (
     <>
-    <div className='bg-tred w-full mt-28  md:mt-2 flex  flex-col justify-center items-center gap-2 '>
+    <div className='bg-tred w-full mt-[8.2rem]  md:mt-2 flex  flex-col justify-center items-center gap-2 '>
     <h2 className="text-4xl font-bold">
               Huzaifa<span  >.</span>
             </h2>
