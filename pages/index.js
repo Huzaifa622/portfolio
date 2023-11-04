@@ -44,7 +44,7 @@ export default function Home() {
       <div id="projects" className="h-screen w-screen ">
         <Projects />
       </div>
-      <div id="contact" className="h-screen w-screen ">
+      <div id="contact" className=" w-screen ">
         <Contact />
       </div>
         <Footer/>
