@@ -26,7 +26,6 @@ const GotoTop = () => {
     window.addEventListener("scroll", listenWindow);
 
     return () => {
-      // Clean up the event listener when the component unmounts
       window.removeEventListener("scroll", listenWindow);
     };
   }, []);
@@ -35,19 +34,12 @@ const GotoTop = () => {
     <>
       {visible && (
      
-        <motion.div
-        
-        animate={{
-          y: -12,
-          textShadow: "0 0 8px white",
-
-          transition: { duration: 1.1, repeat: Infinity },
-        }}
+        <div
           className="fixed top-[90%] lg:top-[85%] p-2 lg:p-4 rounded-full z-50 cursor-pointer left-[85%] lg:left-[90%] bg-tred rounded full"
           onClick={scrollTop}
         >
           <AiOutlineArrowUp size={25} />
-        </motion.div>
+        </div>
       )}
     </>
   );

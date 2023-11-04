@@ -22,8 +22,8 @@ export default function Home() {
   };
   return (
     <div
-      className={` text-xs sm:text-sm md:text-lg lg:text-lg xl:text-xl 2xl:text-2xl snap-y snap-mandatory overflow-x-hidden ${
-        theme ? "bg-twhite text-black " : "bg-black text-twhite"
+      className={` text-xs sm:text-sm md:text-md lg:text-lg xl:text-xl 2xl:text-2xl snap-y snap-mandatory overflow-x-hidden ${
+        theme ?  "bg-black text-twhite" :  "bg-twhite text-black  "
       }  `}
     >
       <Navbar />
@@ -33,9 +33,9 @@ export default function Home() {
         <HeroBanner />
         <button
           onClick={handleTheme}
-          className="fixed z-20 top-5 md:left-72 lg:left-80 xl:left-96 left-3 bg-tred rounded-lg"
+          className=" fixed z-20 top-5 sm:top-5 md:right-9 lg:right-14 sm:right-6 right-0 mx-1  bg-tred rounded-lg text-twhite "
         >
-          {theme ? <HiMoon size={30} /> : <CiSun size={30} />}
+          {theme ? <CiSun size={30} />:<HiMoon size={30} /> }
         </button>
       </div>
       <div id="about" className="h-screen w-screen ">
@@ -46,8 +46,8 @@ export default function Home() {
       </div>
       <div id="contact" className="h-screen w-screen ">
         <Contact />
-        <Footer/>
       </div>
+        <Footer/>
     </div>
   );
 }

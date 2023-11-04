@@ -13,7 +13,7 @@ const Navbar = () => {
             </h2>
           </div>
           <div className="w-[100%]  flex justify-end items-center">
-            <ul className=" w-[40%]  z-10 text-center hidden sm:flex justify-between mx-10">
+            <ul className=" w-[40%]  z-10 text-center hidden md:flex justify-between mx-10">
               <motion.li
                 whileHover={{
                   scale: 1.1,
@@ -67,7 +67,7 @@ const Navbar = () => {
                 textShadow: "0 0 8px white",
                 backgroundColor: "red",
               }}
-              className="bg-tred text-twhite p-2 py-2  rounded-lg "
+              className="bg-tred text-twhite p-2 py-2 mx-2  rounded-lg "
             >
               Download Resume
             </motion.a>

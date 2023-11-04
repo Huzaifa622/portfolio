@@ -8,9 +8,9 @@ import Image from "next/image";
 const HeroBanner = () => {
   return (
     <>
-      <div className="  flex flex-wrap relative">
+      <div className="  flex justify-center items-center flex-wrap relative">
         <div className=" z-10">
-          <div className="m-28 mx-16 w-[65%] md:w-[50%]">
+          <div className=" flex flex-col justify-center m-40 mx-16 w-[65%] md:w-[50%]">
             <RevealY>
               <h3 className="text-4xl md:text-7xl font-extrabold">
                 Hey,I&apos;m Huzaifa<span className="text-tred">.</span>
@@ -25,9 +25,9 @@ const HeroBanner = () => {
             <RevealY>
               <p className="mt-5">
                 {
-                  "I'm a passionate and creative web developer with a strong desire to turn ideas into captivating digital experiences. I've spent 1.5+ years in web developing.My work is driven by a commitment to excellence, attention to detail, and a keen eye for design. I take pride in delivering solutions that are user-friendly and tailored to meet the specific needs of my clients."
+                  "I'm a passionate and creative web developer with a strong desire to turn ideas into captivating digital experiences. I've spent 1.5+ years in web developing. My work is driven by a commitment to excellence, attention to detail, and a keen eye for design. I take pride in delivering solutions that are user-friendly and tailored to meet the specific needs of my client. "
                 }
-                {"let's connect!!"}
+              
               </p>
 
               <motion.button
@@ -45,7 +45,7 @@ const HeroBanner = () => {
             </RevealY>
           </div>
         </div>
-        <div className="absolute hidden sm:block  left-[60%] top-32 rounded-full bg-transparent bg-gradient-to-t from-slate-950 to-tred">
+        <div className="absolute block  left-[60%] top-32 rounded-full bg-transparent bg-gradient-to-t from-slate-950 to-tred">
           <Image
             className="grayscale-[100%] rounded-full opacity-90 w-auto h-auto"
             width={300}
