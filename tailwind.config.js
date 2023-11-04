@@ -10,6 +10,9 @@ module.exports = {
   darkMode : 'class',
   theme: {
     extend: {
+      fontFamily: {
+        'caveat' : ['Caveat' , 'sans-serif']
+      },
       colors:{
         twhite : '#f8f7f2',
         tred : '#fb3640',

@@ -8,8 +8,12 @@ const Navbar = () => {
       <div className="w-full flex justify-center text-center m-2 overflow-x-hidden ">
         <nav className="flex w-[80%] h-[3rem] justify-between items-center text-center ">
           <div>
-            <h2 className="text-4xl font-bold">
+            <h2 className="flex text-4xl font-bold ">
+              
+              <span className="mr-2"> &#60; </span>
               Huzaifa<span className="text-tred ">.</span>
+              <span className="ml-2"> /&#62; </span>
+              
             </h2>
           </div>
           <div className="w-[100%]  flex justify-end items-center">
