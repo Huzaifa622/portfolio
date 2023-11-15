@@ -4,6 +4,7 @@ import RevealX from "./RevealX";
 import { motion } from "framer-motion";
 import { CiCircleChevRight } from "react-icons/ci";
 import { RiJavascriptFill } from "react-icons/ri";
+import { SiExpress } from "react-icons/si";
 import {
   BiLogoCss3,
   BiLogoFirebase,
@@ -15,7 +16,7 @@ import {
   BiLogoRedux
 } from "react-icons/bi";
 import { TbBrandNextjs } from "react-icons/tb";
-import { FaReact } from "react-icons/fa";
+import { FaReact , FaNodeJs  } from "react-icons/fa";
 // import {IoLogoJavascript} from 'react-icons/io'
 import {
   AiFillHtml5,
@@ -169,6 +170,30 @@ const About = () => {
                   >
                     Redux
                     <BiLogoRedux size={20} />
+                  </motion.span>
+                  <motion.span
+                    whileHover={{
+                      scale: 1.1,
+                      boxShadow: "0 0 18px red",
+                      textShadow: "0 0 8px white",
+                      backgroundColor: "red",
+                    }}
+                    className="flex items-center gap-1 text-center p-3 pt-0 pb-0 border-tred border rounded-lg hover:cursor-pointer"
+                  >
+                    Express JS
+                    <SiExpress  size={20} />
+                  </motion.span>
+                  <motion.span
+                    whileHover={{
+                      scale: 1.1,
+                      boxShadow: "0 0 18px red",
+                      textShadow: "0 0 8px white",
+                      backgroundColor: "red",
+                    }}
+                    className="flex items-center gap-1 text-center p-3 pt-0 pb-0 border-tred border rounded-lg hover:cursor-pointer"
+                  >
+                    Node JS
+                    <FaNodeJs size={20} />
                   </motion.span>
                 </div>
               </div>
