@@ -12,10 +12,10 @@ const HeroBanner = () => {
         <div className=" z-10">
           <div className=" flex flex-col justify-center m-40 mx-16 w-[65%] md:w-[50%]">
             <RevealY>
-              <h3 className="text-4xl md:text-7xl font-extrabold">
+              <h3 className="text-4xl md:text-7xl font-extrabold div-title">
                 Hey,I&apos;m Huzaifa<span className="text-tred">.</span>
               </h3>
-              <h1 className="text-2xl mt-5">
+              <h1 className="text-2xl mt-5 div-title">
                 I&lsquo;m a{" "}
                 <span className="text-transparent bg-gradient-to-r bg-clip-text from-tred to-red-700 text-3xl font-bold">
                   Full Stack Developer
@@ -65,7 +65,7 @@ const HeroBanner = () => {
 
             transition: { duration: 1.1, repeat: Infinity },
           }}
-          className="flex items-center text-sm w-28 justify-between "
+          className="div-title flex items-center text-sm w-28 justify-between "
         >
           Scroll Down
           <AiOutlineArrowRight />
@@ -78,7 +78,7 @@ const HeroBanner = () => {
 
             transition: { duration: 1.1, repeat: Infinity },
           }}
-          className="flex items-center text-sm w-28 justify-between "
+          className="div-title flex items-center text-sm w-28 justify-between "
         >
           Scroll Down
           <AiOutlineArrowRight />

@@ -57,7 +57,7 @@ const Projects = () => {
           <div className="w-full mr-4 h-1 bg-tred mb-2">
             <hr />
           </div>
-          <h1 className="text-5xl lg:text-7xl font-extrabold mt-16">
+          <h1 className="text-5xl lg:text-7xl font-extrabold mt-16 div-title">
             <span className="text-tred">.</span>Projects
           </h1>
         </div>

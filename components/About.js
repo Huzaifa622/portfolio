@@ -31,7 +31,7 @@ const About = () => {
       <div>
         <div className="flex items-end justify-center">
           <div className="flex w-[90%] items-end">
-            <h1 className="text-5xl lg:text-7xl font-extrabold mt-16">
+            <h1 className="text-5xl lg:text-7xl font-extrabold mt-16 div-title">
               About<span className="text-tred">.</span>
             </h1>
             <div className="w-full ml-4 h-1 bg-tred mb-2">
@@ -58,7 +58,7 @@ const About = () => {
             </div>
             <div className=" lg:ml-4 lg:w-[40%] my-4 gap-8 flex flex-col w-[100%]">
               <div>
-                <h1 className="flex text-lg items-center text-center font-extrabold">
+                <h1 className="flex text-lg items-center text-center font-extrabold div-title">
                   <CiCircleChevRight className="bg-tred rounded-md" size={30} />
                   My Skills
                 </h1>

@@ -7,7 +7,7 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Caveat', cursive;;
+   
 }
 
 ::-webkit-scrollbar {
@@ -25,4 +25,7 @@
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
    @apply shadow-tred shadow-lg
+}
+.div-title{
+    font-family: 'Caveat', cursive;
 }

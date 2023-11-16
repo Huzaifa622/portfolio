@@ -33,7 +33,7 @@ function ContactForm() {
     <>
     <RevealX>
       <motion.div className="max-w-2xl  mx-auto pt-3 px-20 rounded-md ">
-        <h2 className="text-2xl font-semibold mb-4">Contact</h2>
+        <h2 className="text-2xl font-semibold mb-4 div-title">Contact</h2>
         <form onSubmit={sendEmail} ref={formRef}>
           <div className="mb-4">
            
